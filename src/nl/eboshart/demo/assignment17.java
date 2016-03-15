@@ -6,7 +6,7 @@ public class assignment17 {
 		double test1=0;
 		int test2=0;
 		boolean prime=true;
-		int number=127;
+		int number=8;
 		for(int i=2;i<=number/2;i++) {
 			test1=(double) number/i;
 			test2=number/i;
