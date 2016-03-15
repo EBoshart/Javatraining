@@ -6,14 +6,17 @@ public class assignment17 {
 		double test1=0;
 		int test2=0;
 		boolean prime=true;
-		for(int i=1;i<127/2;i++) {
-			test1=127/i;
-			test2=127/i;
-			if (test1 !=test2) {
+		int number=127;
+		for(int i=2;i<=number/2;i++) {
+			test1=(double) number/i;
+			test2=number/i;
+			if (test1 ==test2) {
 				prime=false;
+				System.out.println(" false, divisile by "+i);
 			}
 			
 		}
-		System.out.println(prime);
+		System.out.println(number+" is prime? "+prime);
+		
 	}
 }
