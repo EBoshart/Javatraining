@@ -8,8 +8,11 @@ public class assignment24 {
 		Scanner s=new Scanner(System.in);
 		String input=s.next();
 		int index=Arrays.asList(items).indexOf(input);
-		if 
-		System.out.println(prices[index]);
+		if(Arrays.asList(items).contains(input)) {
+			System.out.println(prices[index]);
+		} else {
+			System.out.println("item not found");
+		}
 		
 	}
 }
