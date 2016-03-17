@@ -1,10 +1,13 @@
 package net.projecteuler;
-import java.util.Scanner;
+
 public class project8 {
 	public static void main(String[] args) {
 		int adjacentdigits=13;
-		String s;
-		String number=" 73167176531330624919225119674426574742355349194934"
+		String s1="";
+		String s2="";
+		long x=0;
+		long highestproduct=0;
+		String number="73167176531330624919225119674426574742355349194934"
 				+"96983520312774506326239578318016984801869478851843"
 				+"85861560789112949495459501737958331952853208805511"
 				+"12540698747158523863050715693290963295227443043557"
@@ -24,9 +27,24 @@ public class project8 {
 				+"84580156166097919133875499200524063689912560717606"
 				+"05886116467109405077541002256983155200055935729725"
 				+"71636269561882670428252483600823257530420752963450";
-		for(int i=0;i<number.length()-adjacentdigits+1;i++)
-		s=number.substring(i,adjacentdigits+i);
-		
-		System.out.println(s);
+		for(int i=0;i<number.length()-adjacentdigits+1;i++) {
+			x=1;
+			s1=number.substring(i,adjacentdigits+i);
+			for(int j=0;j<adjacentdigits;j++) {
+				s2=s1.substring(j,j+1);
+				x=x*Long.valueOf(s2);
+			}
+			
+			if(x>highestproduct) {
+				highestproduct=x;
+			}
+			
+			
+			
+			
+			
+			//System.out.println(s);
+		}
+		System.out.println(highestproduct);
 	}
 }

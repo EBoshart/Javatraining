@@ -11,7 +11,7 @@ public class problem4 {
 				
 				test=testifpalindrome(i,j);
 					
-				if(test) {
+				if(test && i*j>x) {
 					x=i*j;
 					a=i;
 					b=j;
