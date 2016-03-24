@@ -6,7 +6,6 @@ public class ProductBestelling extends DefaultProduct{
 	
 	ProductBestelling(String naam, int Prijs, int voorraad) {
 		super(naam, Prijs, voorraad);
-		// TODO Auto-generated constructor stub
 	}
 	ProductBestelling(String naam, int Prijs, int voorraad, int eenheid){
 		super(naam,Prijs,voorraad,eenheid);
@@ -26,5 +25,5 @@ public class ProductBestelling extends DefaultProduct{
 	}
 	
 		
-	}
+	
 }
