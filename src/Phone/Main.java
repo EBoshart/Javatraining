@@ -10,6 +10,8 @@ public class Main {
 		//System.out.println(B.getOS());
 		ArrayList<MobilePhone> list=new ArrayList<>();
 		list.add(A);
+		Double  x=1.0;
+		
 		list.add(B);
 		for(MobilePhone x:list)
 			if(x instanceof USBCharger) {
